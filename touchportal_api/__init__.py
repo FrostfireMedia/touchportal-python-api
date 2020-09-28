@@ -63,7 +63,7 @@ class Client(BaseEventEmitter):
         if len(states) <= 0:
             raise Exception("stateUpdateMany: states contains no data")
         for state in states:
-            stateArray.append({"type": "stateUpdate", "id": state.id, "value": state.value})
+            stateArray.append({"type": "stateUpdate", "id": state["id"], "value": state["value"]})
         self.sendArray(stateArray)
 
     def connect(self):
