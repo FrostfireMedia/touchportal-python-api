@@ -1,7 +1,7 @@
-import __init__ as touchportal_api
+import touchportal_api
 
 if __name__ == "__main__":
-    tpClient = touchportal_api.Client(pluginId="EDTPP")
+    tpClient = touchportal_api.Client(pluginId="Test")
 
 
     @tpClient.on("info")

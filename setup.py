@@ -18,5 +18,9 @@ setuptools.setup(
         "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
         "Operating System :: OS Independent",
     ],
+    install_requires=[
+        "pyee==8.0.1",
+        "simple-socket==0.0.5"
+    ],
     python_requires=">=3.6"
 )
