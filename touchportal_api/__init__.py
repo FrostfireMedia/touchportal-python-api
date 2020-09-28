@@ -39,7 +39,7 @@ class Client(BaseEventEmitter):
         self.send({"type": "pair", "id": self.pluginId})
 
     def createState(self, stateId, desc, defaultValue):
-        if self.customStates[stateId]:
+        if stateId in self.customStates:
             raise Exception("createState: Custom state {} already exists".format(stateId))
         self.send({"type": "createState", "id": stateId, "desc": desc, "defaultValue": defaultValue})
 
