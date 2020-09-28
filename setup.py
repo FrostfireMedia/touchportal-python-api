@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="touchportal-api-ff-sclark",
-    version="1.0.2",
+    version="1.0.3",
     author="Shane Clark",
     author_email="contact@sclark.ml",
     description="A client to connect to Touch Portal",

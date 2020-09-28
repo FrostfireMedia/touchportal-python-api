@@ -84,4 +84,4 @@ class Client(BaseEventEmitter):
         self.emit("connect", client, rawData)
 
     def onDisconnect(self, client, rawData):
-        self.emit("connect", client, rawData)
+        self.emit("disconnect", client, rawData)
